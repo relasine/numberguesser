@@ -195,9 +195,10 @@ function disabledButton() {
 function disabledChangeButton() {
   var parsedMin = parseInt(minValueEntry.value);
   var parsedMax = parseInt(maxValueEntry.value);
-  if (Number.isInteger(parsedMin) && Number.isInteger(parsedMax)) {
+  if (Number.isInteger(parsedMin) && Number.isInteger(parsedMax) && parsedMin < parsedMax) {
     changeMinMaxButton.disabled = false;
   } else {
     changeMinMaxButton.disabled = true;
   }
 }
+
