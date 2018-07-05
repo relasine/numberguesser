@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+  <link href="styles.css" rel="stylesheet">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <title>Number Guesser</title>
+</head>
+<body>
+  <h1>
+    <span class="number-h1">Number </span>
+    <span class="guesser-h1">Guesser</span>
+  </h1>
+  <form>
+    <input type="text" name="user-guess" class="user-guess" placeholder=" Enter your guess"></input>
+    <div class="top-button-div">
+     <button name="submit-button" class="submit-button" disabled>Guess</button>
+     <button name="clear-button" class="clear-button" disabled>Clear</button> 
+    </div>
+  </form>
+  <p class="last-guess-text">Player One: your last guess was</p>
+  <p class="last-guess-number">-</p>
+  <p class="high-low-text">That is too ...</p>
+    <div class="guess-total-wrapper">
+    <p class=player-one-guess-total>Player One: 0</p>
+    <p class=player-two-guess-total>Player Two: 0</p>
+  </div>
+  <button name="reset-button" class="reset-button" disabled>Reset</button>
+
+  <form>
+    <div class="min-max-label-wrapper">
+      <p class="min-value-label">Minimum Possible Value</p>
+      <p class="max-value-label">Maximum Possible Value</p>
+    </div>
+    <div class="min-max-entry-div">
+      <input type="text" name="minimum-value" class="min-value-entry" placeholder="1"></input>
+      <input type="text" name="maximum-value" class="max-value-entry" placeholder="100"></input>
+    </div>
+  </form>
+  <button name="change-min-max-value" class="change-min-max-value" disabled>Change</button>
+  <script src="javaScriptTest.js"></script>
+</body>
+</html> 
